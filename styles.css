@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    overflow: hidden;
+    background-image: conic-gradient(at 0% 0%, snow, white);
+}
+.contenedor {
+    margin: auto;
+    width: 95vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.caja {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 85%;
+    max-width: 450px;
+    height: 50%;
+    background-image:conic-gradient(from -270deg at 110% 50%, cadetblue, darkgreen) ;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    box-shadow: 4px 8px 25px rgba(75, 75, 75, 0.575);
+}
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    user-select: none;
+}
+.titulo h3 {
+    font-weight: 700;
+    font-size: 25px;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+.titulo p {
+    font-size: 11px;
+    color: antiquewhite;
+    position: relative;
+    bottom: 4px;
+}
+.cuentas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 90%;
+    height: 80%;
+}
+.cuenta {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px ;
+}
+label {
+    color: antiquewhite;
+    font-size: 12px;   
+}
+.billtituloaccount {
+    color: white;
+    font-size: 16px;
+}
+i {
+    position: relative;
+    bottom: -10px;
+    color: white;
+
+}
+button {
+    background: none;
+    cursor: pointer;
+    border: none;
+}
+input {
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 5px 8px;
+    place-content: white;
+    border-bottom: white solid 1px;
+    width: 85%;
+}
+.personas {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px ;
+}
+.billamount {
+    color: white;
+    font-size: 16px;
+}
+.servicio {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+select {
+    background: none;
+    border: none;
+    color: antiquewhite;
+    outline: none;
+}
+select:focus  {
+    color: rgb(179, 165, 147);
+
+}
+input:focus-within {
+    border-bottom: solid 1px rgb(194, 188, 188);
+}
+.calculate {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+   
+}
+.calculate button {
+    background-image: conic-gradient(from -90deg at bottom center, papayawhip, peachpuff);
+    color: rgb(0, 121, 30);
+    font-weight: 700;
+    width: 95%;
+    font-size: 12px;
+    
+    border-radius: 8px;
+    height: 35px;
+}
+option {
+    color:rgb(0, 121, 30);
+    background:peachpuff;
+    border-radius: none;
+}
+i:hover {
+    color: rgb(207, 190, 168);
+}
+#monton {
+    visibility: hidden;
+    color: white;
+    width: 40%;
+    background: conic-gradient(from -270deg at 75% 110%, midnightblue, lawngreen);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 5px 10px rgba(109, 108, 108, 0.466);
+    position: absolute;
+    border-radius: 4px;
+    bottom: 30px;
+}
+#monton.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+     animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  

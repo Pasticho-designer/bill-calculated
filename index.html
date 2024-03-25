@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bill count</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle&family=Libre+Barcode+39&family=Manrope&family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Silkscreen:wght@400;700&family=Staatliches&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="caja">
+            <div class="titulo">
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+                <h3>BILL</h3>
+            <p>Calculate tip - account</p>
+            </div>
+            <div class=" cuentas">
+                <div class="cuenta">
+                    <div class="cuentatexto">
+                        <label  class="billtituloaccount" for="form">Bill amount</label>
+                    <label for="forn">reference of value count</label>
+                    </div>
+                    <div class="cuentaselecotor">
+                        <button><i class="material-symbols-outlined">
+                            payments
+                        </i></button>
+                        <input id="account" type="number" style="color: white;">
+                    </div>
+                  
+                </div>
+                <div class="personas">
+                    <div class="personastitul">
+                        
+                    <label class="billamount" for="form">Guest's Number</label>
+                    <label for="form"> Each one get a part</label>
+                    </div>
+                    <div class="personasselector">
+                        
+                    <button><i class="material-symbols-outlined">
+                        man_4
+                    </i></button>
+                    <input id="people" type="number">
+                    </div>
+                </div>
+                <div class="servicio">
+                    <label class="billamount" for="form">Service Quality</label>
+                    <select id="selector" id="selector">
+                        <option value="0.3"> 30% - Great</option>
+                        <option value="0.2"> 20% - Good</option>
+                        <option value="0.1"> 10% - Bad</option>
+                        <option value="0.05"> 5% - Terrible</option>
+                    </select>
+                </div>
+                <div class="calculate">
+                    <button onclick="calculate()" >calculate</button>
+                </div>
+                
+            </div>
+            
+
+
+        </div>
+        <div id="monton"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
